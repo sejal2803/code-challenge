@@ -39,5 +39,6 @@ Every time the company's zip code is updated this city and state should be updat
 
 The City and State should be added as attributes to the Company object.
 
-☐ Include test coverage for all your changes
+### ☐ Include test coverage for all your changes
+
 For all functionality extend or add tests from existing tests.
