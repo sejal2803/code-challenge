@@ -43,29 +43,18 @@ class CompaniesController < ApplicationController
   private
 
   def company_params
-    params.require(:companies_company).permit(
+    params.require(:company).permit(
       :name,
       :legal_name,
-      :full_address,
       :zip_code,
       :phone,
       :email,
       :owner_id,
-      :google_analytics_id,
-      :color
     )
   end
 
   def set_company
-    @company = Company.friendly.
-      includes(
-        :hero,
-        :owner_detail,
-        :services,
-        :values,
-        :appeals
-      ).
-      find(params[:id])
+    @company = Company.find(params[:id])
   end
 
   def set_owners
