@@ -2,7 +2,7 @@
   <%= form_for @company do |f| %>
 
     <div class="row my-lg-3">
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <label><strong>Name</strong><br><small class="text-muted">The public DBA, or Common name of the organization</small></label>
       </div>
       <div class="col-lg offset-lg-1">
@@ -14,7 +14,7 @@
 
 
     <div class="row my-lg-3">
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <label><strong>Zip Code</strong><br><small class="text-muted">5 Digit US postal code</small></label>
       </div>
       <div class="col-lg offset-lg-1">
@@ -25,7 +25,19 @@
     </div>
 
     <div class="row my-lg-3">
-      <div class="col-lg-4">
+      <div class="col-lg-3">
+        <label><strong>Description</strong><br><small class="text-muted">Rich text marketing description</small></label>
+      </div>
+      <div class="col-lg-8 offset-lg-1">
+        <div class="form-group">
+          <%= f.rich_text_area :description %>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row my-lg-3">
+      <div class="col-lg-3">
         <label><strong>Phone</strong><br><small class="text-muted">Shown in marketing</small></label>
       </div>
       <div class="col-lg offset-lg-1">
@@ -36,7 +48,7 @@
     </div>
 
     <div class="row my-lg-3">
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <label><strong>Email</strong><br><small class="text-muted">Shown in marketing</small></label>
       </div>
       <div class="col-lg offset-lg-1">

@@ -31,6 +31,12 @@ FileUtils.chdir APP_ROOT do
   puts "\n== Removing old logs and tempfiles =="
   system! 'bin/rails log:clear tmp:clear'
 
+  puts "\n== Loading test files (fixtures) =="
+  system! 'bundle exec rake db:fixtures:load'
+
+  puts "\n== Adding some Action Text rich text fields =="
+system! 'bundle exec rake test_data:rich_texts'
+
   puts "\n== Restarting application server =="
   system! 'bin/rails restart'
 end
