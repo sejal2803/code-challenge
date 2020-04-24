@@ -8,12 +8,12 @@
       <p>For companies, there isn't currently a way to destroy them. There should be a confirmation of the action. Some kind of "Are you sure?" message.</p>
     </li>
     <li class="list-group-item">
-      <h4><strong>☐ Add Custom Validation to company email Address (When Pressent)</strong></h4>
-      <p>All email addresses for new companies should only be a @getmainstreet.com domain. A custom error should render when attempting to create or udpate a copmany when the email does not match this domain. This should only be when email is present. Blank emails can be ignored.</p>
+      <h4><strong>☐ Add Custom Validation to company email Address (When Present)</strong></h4>
+      <p>All email addresses for new companies should only be a @getmainstreet.com domain. A custom error should render when attempting to create or update a company when the email does not match this domain. This should only be when email is present. Blank emails can be ignored.</p>
     </li>
     <li class="list-group-item">
       <h4><strong>☐ Add City State To Companies from Zip Code.</strong></h4>
-      <p>For each company "Show" page there is a placeholder for the <strong>City, State</strong> for that company. You'll need to leverage the zip code to have that value render the actual <strong>City, State</strong>. For example: <strong> Nashville, TN</strong> There is a failing test in the test suite. It is strongly recomended to use the <a href="https://github.com/monterail/zip-codes">ZipCodes gem</a> that is already in this project.</p>
+      <p>For each company "Show" page there is a placeholder for the <strong>City, State</strong> for that company. You'll need to leverage the zip code to have that value render the actual <strong>City, State</strong>. For example: <strong> Nashville, TN</strong> It is strongly recommended to use the <a href="https://github.com/monterail/zip-codes">ZipCodes gem</a> that is already in this project.</p>
       <p>Every time the company's zip code is updated this city and state should be updated.</p>
       <p>The City and State should be added as attributes to the Copmany object.</p>
     </li>

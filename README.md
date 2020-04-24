@@ -27,13 +27,13 @@ Once that runs you should be able to run the following 2 commands in separate te
 
 For companies, there isn't currently a way to destroy them. There should be a confirmation of the action. Some kind of "Are you sure?" message.
 
-### ☐ Add Custom Validation to company email Address (When Pressent)
+### ☐ Add Custom Validation to company email Address (When Present)
 
-All email addresses for new companies should only be a @getmainstreet.com domain. A custom error should render when attempting to create or udpate a copmany when the email does not match this domain. This should only be when email is present. Blank emails can be ignored.
+All email addresses for new companies should only be a @getmainstreet.com domain. A custom error should render when attempting to create or update a company when the email does not match this domain. This should only be when email is present. Blank emails can be ignored.
 
 ### ☐ Add City State To Companies from Zip Code.
 
-For each company "Show" page there is a placeholder for the City, State for that company. You'll need to leverage the zip code to have that value render the actual City, State. For example: Nashville, TN There is a failing test in the test suite. It is strongly recomended to use the ZipCodes gem that is already in this project.
+For each company "Show" page there is a placeholder for the City, State for that company. You'll need to leverage the zip code to have that value render the actual City, State. For example: Nashville, TN. It is strongly recommended to use the ZipCodes gem that is already in this project.
 
 Every time the company's zip code is updated this city and state should be updated.
 
@@ -41,5 +41,3 @@ The City and State should be added as attributes to the Company object.
 
 ☐ Include test coverage for all your changes
 For all functionality extend or add tests from existing tests.
-
-Home Companies
