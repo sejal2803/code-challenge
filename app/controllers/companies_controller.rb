@@ -46,6 +46,7 @@ class CompaniesController < ApplicationController
     params.require(:company).permit(
       :name,
       :legal_name,
+      :description,
       :zip_code,
       :phone,
       :email,

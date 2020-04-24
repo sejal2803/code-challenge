@@ -1,24 +1,22 @@
-# README
+# Code Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the Main Street code challenge. This repository includes a very basic rails app to be used to assessment and testing purposes only.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Dependencies:
 
-* System dependencies
+- Rails 6 (Framework)
+- Postgres (For Database)
+- Node (For Webpacker / Rails Dependencies)
 
-* Configuration
+This repository has a `bin/setup` script that should get things up and running for the majority of users if you have the above dependencies installed.
 
-* Database creation
+From the root of the project directory - simply run:
 
-* Database initialization
+`bin/setup`
 
-* How to run the test suite
+Once that runs you should be able to run the following 2 commands in separate terminal tabs / windows:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1.  `rails s` - this will start the rails server locally.
+2.  `bin/webpack-dev-server` - this will start to watch and recompile the JavaScripts found in `app/javascript`

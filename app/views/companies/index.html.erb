@@ -1,14 +1,14 @@
 <div class="container py-5">
   <h3>Companies</h3>
-  <%= link_to "Create a Company", new_company_path %>
+  <%= link_to "+ Create a Company", new_company_path %><br>
   <% if @companies.empty? %>
   <p>No Companies Found</p>
   <% else %>
     <ul class="list-group my-5">
       <% @companies.each do |company| %>
-        <li class="list-group-item">
-            <%= company.name %>
-        </li>
+        <a href="<%= company_path(company) %>" class="list-group-item list-group-item-action">
+          <%= company.name %>
+        </a>
       <% end %>
     </ul>
   <% end %>

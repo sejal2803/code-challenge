@@ -1,0 +1,14 @@
+<div class="container py-5">
+  <h3>Company</h3>
+  <%= link_to "< Companies", companies_path %>
+  <%= link_to "Edit", edit_company_path, class: "text-right" %>
+<div class="bg-success py-5">
+  <div class="container p-5 text-white">
+    <h1><%= @company.name %></h1>
+    <div class="description">
+      <% @company.description %>
+    </div>
+  </div>
+  <div class="bg-gray">
+  </div>
+</div>
