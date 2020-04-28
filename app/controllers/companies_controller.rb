@@ -57,9 +57,5 @@ class CompaniesController < ApplicationController
   def set_company
     @company = Company.find(params[:id])
   end
-
-  def set_owners
-    @owners = Users::User.with_role(:owner).unarchived
-  end
-
+  
 end
