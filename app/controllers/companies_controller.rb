@@ -12,25 +12,6 @@ class CompaniesController < ApplicationController
   def show
   end
 
-  def edit
-  end
-
-  def destroy
-    if @company.destroy
-      redirect_to companies_path, notice: "Company Deleted"
-    else
-      redirect_to company_settings_path(@company), alert: "Could not delete"
-    end
-  end
-
-  def update
-    if @company.update(company_params)
-      redirect_to companies_path, notice: "Changes Saved"
-    else
-      render :edit
-    end
-  end
-
   def create
     @company = Company.new(company_params)
     if @company.save
@@ -39,6 +20,17 @@ class CompaniesController < ApplicationController
       render :new
     end
   end
+
+  def edit
+  end
+
+  def update
+    if @company.update(company_params)
+      redirect_to companies_path, notice: "Changes Saved"
+    else
+      render :edit
+    end
+  end  
 
   private
 
