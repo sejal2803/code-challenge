@@ -2,6 +2,8 @@
 
 Welcome to the Main Street code challenge. This repository includes a very basic rails app to be used to assessment and testing purposes only.
 
+Note: This codebase is not nearly or fully representative of our platform however it's a good small sample of the kinds of technology and problems we are solving. 
+
 ## Getting Started
 
 Dependencies:
