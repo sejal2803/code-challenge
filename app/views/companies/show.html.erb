@@ -7,11 +7,15 @@
     <div class="col text-right">
       <%= link_to "Edit", edit_company_path %>
     </div>
+    <div class="col text-right">
+      <%= link_to "Delete", company_path(@company), data: { confirm: "Are you sure you want to delete this?" }, method: :delete, class: 'btn btn-danger btn-sm' %>
+    </div>
+
   </div>
   <div class="bg-success">
     <div class="container p-5 text-white">
       <h1><%= @company.name %></h1>
-      <h3>City, State</h3>
+      <h3><%= @company.city %>, <%= @company.state %></h3>
       <pre>☝️ This is what needs to be udpated. Examples: Atlanta, GA or Nashvile, TN</pre>
     </div>
   </div>
@@ -23,4 +27,5 @@
   <div class="bg-success text-white text-center py-3">
     <p class="lead"><%= @company.phone %> — <%= @company.email %></p>
   </div>
+
 </div>
